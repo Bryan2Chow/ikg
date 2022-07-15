@@ -1,2 +1,2 @@
 # ikg
-industrial knowledge graph in production machning quality
+industrial knowledge graph in production machining quality
