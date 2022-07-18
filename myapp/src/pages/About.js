@@ -6,7 +6,7 @@ export default class About extends Component {
         return (
             <div style={{ height: "100%" }}>
                 <h2>关于我们</h2>
-                <h3 style={{ marginLeft: 20, marginTop: 20 }}>团队介绍</h3>
+                <h3 style={{ marginLeft: 20, marginTop: 20 }}>|  团队介绍</h3>
                 <Card style={{ marginLeft: 20, height: "60%", textAlign: 'center', backgroundColor: "#F0EBE3" }}>
                     <h2 style={{ marginTop: 50 }}>东华大学机械工程学院智能制造研究所</h2>
 

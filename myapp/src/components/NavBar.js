@@ -7,13 +7,16 @@ import HomePage from '../pages/HomePage';
 import FileOrgnize from '../pages/FileOrgnize';
 import FileAnalyze from '../pages/FileAnalyze';
 import About from '../pages/About';
+import QualityKnowledgeExtract from '../pages/QualityKnowledgeExtract';
+import QualityReasoningQuestion from '../pages/QualityReasoningQuestion';
+import QualtiyDatum from '../pages/QualtiyDatum';
 
 const { Header, Content, Sider } = Layout;
 export default class NavBar extends Component {
 
     render() {
         return (
-            <Layout style={{ width: '100%' }}>
+            <Layout style={{ width: '100%', position: 'fixed' }}>
                 {/* 标题头 */}
                 <Header className="header" style={{ color: 'skyblue' }}>
                     <div>
@@ -113,6 +116,9 @@ export default class NavBar extends Component {
                                 <Route path='/FileOrgnize/FileManagement' element={<FileOrgnize />} />
                                 <Route path='/FileOrgnize/FileAnalyze' element={<FileAnalyze />} />
                                 <Route path='/About' element={<About />} />
+                                <Route path="/FileOrgnize/QualityKnowledgeExtract" element={<QualityKnowledgeExtract />} />
+                                <Route path='/QualityReasoningQuestion' element={<QualityReasoningQuestion />} />
+                                <Route path='/QualtiyDatum' element={<QualtiyDatum />} />
                                 <Route path="/" element={<Navigate to="/HomePage" />} />
                             </Routes>
                         </Content>
