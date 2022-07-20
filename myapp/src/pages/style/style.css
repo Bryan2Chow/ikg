@@ -46,3 +46,12 @@
   margin-right: auto;
   background: #154360 repeating-linear-gradient(30deg, hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1) 15px, transparent 0, transparent 30px);
 }
+.FakeBtn {
+  color: rgb(255, 255, 255);
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  background-color: royalblue;
+  border-radius: 10px;
+}
