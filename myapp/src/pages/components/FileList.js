@@ -1,47 +1,44 @@
 import React, { Component } from 'react';
 import { Checkbox, Image } from 'antd';
 
-var Filetotal = [
-    <Checkbox key="1" value="A" ><Image style={{ height: "300px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>,
-    <Checkbox key="2" value="B"><Image style={{ height: "300px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>,
-    <Checkbox key="3" value="C"><Image style={{ height: "300px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>,
-    <Checkbox key="4" value="D"><Image style={{ height: "300px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>,
-    <Checkbox key="5" value="E"><Image style={{ height: "300px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>,
-    <Checkbox key="6" value="C"><Image style={{ height: "300px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>,
-    <Checkbox key="7" value="D"><Image style={{ height: "300px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>,
-    <Checkbox key="8" value="E"><Image style={{ height: "300px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>,
-]
+
 var selectedfile = [];
-selectedfile = Filetotal.slice(0, 5)
 export default class FileList extends Component {
 
+    CheckChange = (checkedValues) => {
+        console.log(checkedValues);
+    }
     render() {
+        const { processingData, DetectiveImg, processingDataState, DetectiveImgState, pages } = this.props.DataInfo
+        if (processingDataState) {
+            // console.log(processingData);
+            selectedfile = processingData.slice(5 * pages - 5, 5 * pages)
+        }
+        if (DetectiveImgState) {
+            selectedfile = DetectiveImg.slice(5 * pages - 5, 5 * pages)
+        }
         return (
             <div>
-                <Checkbox.Group style={{ textAlign: 'center', width: '100%' }}>
+                <Checkbox.Group style={{ textAlign: 'center', width: '100%' }} onChange={this.CheckChange}>
                     {
-                        selectedfile.map(file => {
+
+                        selectedfile.map((file, index) => {
                             return (
-                                file
-                                // console.log(1)
-                                // <Checkbox ><Image style={{ height: "300px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>
+                                <div style={{ display: 'inline-block' }} key={index}>
+                                    < Checkbox value={index}>
+                                        <Image style={{ height: "300px", paddingTop: "35px", paddingBottom: "35px" }} src={require('../img/1.png')}></Image>
+                                    </Checkbox>
+                                    <h2>{index}</h2>
+                                </div>
+
                             )
                         })
 
                     }
-                    {/* {
-                        <div>
-                            <Checkbox value="A" ><Image style={{ height: "300px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>
-                            <Checkbox value="B"><Image style={{ height: "300px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>
-                            <Checkbox value="C"><Image style={{ height: "300px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>
-                            <Checkbox value="D"><Image style={{ height: "300px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>
-                            <Checkbox value="E"><Image style={{ height: "300px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>
-                        </div>
-
-                    } */}
-                    {/* {selectedfile} */}
                 </Checkbox.Group>
-            </div>
+            </div >
         )
     }
+
+
 }

@@ -1,0 +1,48 @@
+.About {
+  height: 100%;
+}
+.About > h3 {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.About .ContentShow {
+  margin-left: 20px;
+  height: 60%;
+  text-align: center;
+  background-color: #F0EBE3;
+}
+.About .ContentShow h2 {
+  margin-top: 50px;
+}
+.ReasoningQuestion {
+  height: 100%;
+}
+.ReasoningQuestion ul {
+  list-style-type: none;
+}
+.ReasoningQuestion .QuestionDescription > a {
+  color: blue;
+}
+.ReasoningQuestion .QuestionDescription .SubQuestionDescription {
+  margin-top: 10px;
+}
+.ReasoningQuestion .QuestionResult > h3 {
+  margin-top: 20px;
+}
+.ReasoningQuestion .QuestionResult > div {
+  display: flex;
+  justify-content: space-between;
+}
+.ReasoningQuestion .RealtionShow {
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #2c3e50;
+  border-radius: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #154360 repeating-linear-gradient(30deg, hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1) 15px, transparent 0, transparent 30px);
+}

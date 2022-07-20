@@ -14,6 +14,10 @@ const contentStyle = {
 };
 
 export default class HomePage extends Component {
+    state = {
+        EntityNumbers: 25626,
+        RealtionNumbers: 54039
+    }
     render() {
         return (
             <div style={{ marginTop: 10, height: "100%" }}>
@@ -59,10 +63,10 @@ export default class HomePage extends Component {
 
                 <div style={{ textAlign: 'center', height: "8%", marginTop: 20 }}>
                     <div style={{ marginRight: 100, padding: 10, display: "inline-block", backgroundColor: "#364d79" }}>
-                        <h3 style={{ color: 'white' }}>实体数量： 45</h3>
+                        <h3 style={{ color: 'white' }}>实体数量： {this.state.EntityNumbers}</h3>
                     </div>
                     <div style={{ marginLeft: 100, padding: 10, display: "inline-block", backgroundColor: "#364d79" }}>
-                        <h3 style={{ color: 'white' }}>关系数量： 56</h3>
+                        <h3 style={{ color: 'white' }}>关系数量： {this.state.RealtionNumbers}</h3>
                     </div>
                 </div>
 
