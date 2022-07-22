@@ -80,7 +80,7 @@ const ConstructGraph = (data) => {
         .selectAll("path")
         // 绑定数据
         .data(links, function (d) {
-            // console.log(typeof d.source)
+            // console.log(d)
             if (typeof (d.source) === 'object') {
                 return d.source.name + "_" + d.label + "_" + d.target.name
             }
@@ -169,8 +169,8 @@ const ConstructGraph = (data) => {
         .text(d => d.name)
         .attr("dx", function () {
             // 获得节点字的长度
-            console.log(this.getBoundingClientRect().width)
-            return this.getBoundingClientRect().width / 2 * (-1)
+            // console.log(this.getBoundingClientRect().width)
+            return this.getBoundingClientRect().width * (-1)
         })
         .attr("dy", 0)
         .attr("fill", "black")
@@ -181,6 +181,7 @@ const ConstructGraph = (data) => {
         link
             // 设置边的
             .attr("d", function (d) {
+                console.log(d)
                 if (d.source.x < d.target.x) {
                     return "M " + d.source.x + " " + d.source.y + " L " + d.target.x + " " + d.target.y
                 }
