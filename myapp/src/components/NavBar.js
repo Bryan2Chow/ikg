@@ -10,7 +10,8 @@ import About from '../pages/About';
 import QualityKnowledgeExtract from '../pages/QualityKnowledgeExtract';
 import QualityReasoningQuestion from '../pages/QualityReasoningQuestion';
 import QualtiyDatum from '../pages/QualtiyDatum';
-
+import QualityGraph from '../pages/components/QualityGraph';
+import MangementProduction from '../pages/components/MangementProduction';
 const { Header, Content, Sider } = Layout;
 export default class NavBar extends Component {
 
@@ -119,7 +120,9 @@ export default class NavBar extends Component {
                                 <Route path="/FileOrgnize/QualityKnowledgeExtract" element={<QualityKnowledgeExtract />} />
                                 <Route path='/QualityReasoningQuestion' element={<QualityReasoningQuestion />} />
                                 <Route path='/QualtiyDatum' element={<QualtiyDatum />} />
-                                <Route path="/" element={<Navigate to="/HomePage" />} />
+                                <Route path='/QualityGraph' element={<QualityGraph />} />
+                                <Route path='/FileOrgnize/MangementProduction' element={<MangementProduction />} />
+                                <Route path='/' element={<Navigate to="/HomePage" />} />
                             </Routes>
                         </Content>
                     </Layout>
