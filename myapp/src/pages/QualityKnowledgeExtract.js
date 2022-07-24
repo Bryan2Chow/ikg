@@ -5,14 +5,14 @@ const { TextArea } = Input
 export default class QualityKnowledgeExtract extends Component {
     render() {
         return (
-            <div style={{ width: '100%' }}>
+            <div style={{ width: '100%', height: "100%" }}>
                 <h2>质量信息抽取</h2>
 
-                <div style={{ display: 'flex', justifyContent: 'space-between', width: "100%", marginTop: 20 }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', width: "100%", marginTop: 20, height: "45%" }}>
                     <div style={{ width: '30%' }}>
                         <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
                             <h3 style={{ margin: 0, marginLeft: 10 }}>| 输入 </h3>
-                            <Button type="primary" style={{ marginLeft: '40%' }}>分析</Button>
+                            <Button type="primary" style={{ marginLeft: '30%' }}>分析</Button>
                             <Button type="primary" style={{ marginLeft: 20 }}>提交</Button>
                         </div>
                         <TextArea style={{ height: 200, marginTop: 10 }} />
@@ -28,7 +28,7 @@ export default class QualityKnowledgeExtract extends Component {
                     </div>
                 </div>
 
-                <div style={{ display: 'flex', justifyContent: 'space-between', width: "100%", marginTop: 40 }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', width: "100%", marginTop: 40, height: "45%" }}>
                     <div style={{ width: '45%' }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                             <h3 style={{ margin: 0, marginLeft: 10 }}>| 语义依存句法分析 </h3>
@@ -45,7 +45,7 @@ export default class QualityKnowledgeExtract extends Component {
                         <TextArea style={{ height: 200, marginTop: 10 }} />
                     </div>
                 </div>
-            </div>
+            </div >
         )
     }
 }

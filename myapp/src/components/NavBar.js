@@ -17,7 +17,7 @@ export default class NavBar extends Component {
 
     render() {
         return (
-            <Layout style={{ width: '100%', position: 'fixed' }}>
+            <Layout style={{ width: '100%', height: '100%' }}>
                 {/* 标题头 */}
                 <Header className="header" style={{ color: 'skyblue' }}>
                     <div>
@@ -32,8 +32,8 @@ export default class NavBar extends Component {
                         </div>
                     </div>
                 </Header>
-                <Layout>
-                    <Sider width={220} style={{ height: 1000 }} className="site-layout-background">
+                <Layout style={{}}>
+                    <Sider width={220} style={{}} className="site-layout-background">
                         <Menu
                             theme="dark"
                             mode="inline"

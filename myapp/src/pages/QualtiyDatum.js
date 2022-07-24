@@ -44,8 +44,8 @@ export default class QualtiyDatum extends Component {
     }
     render() {
         return (
-            <div>
-                <Radio.Group defaultValue="实体查询" buttonStyle="solid" style={{ verticalAlign: 'middle' }} >
+            <div style={{ height: "100%" }}>
+                <Radio.Group defaultValue="实体查询" buttonStyle="solid" style={{ verticalAlign: 'middle', height: "5%" }} >
                     <Radio.Button value="实体查询" style={{ marginRight: 80 }} onClick={this.ChangeModel}>实体查询</Radio.Button>
                     <Radio.Button value="关系查询" style={{ marginRight: 80 }} onClick={this.ChangeModel}>关系查询</Radio.Button>
                     <Radio.Button value="多跳追溯" onClick={this.ChangeModel}>多跳追溯</Radio.Button>

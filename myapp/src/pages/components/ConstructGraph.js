@@ -125,7 +125,7 @@ const ConstructGraph = (data) => {
         // 用于文本的内容会上限浮动的问题
         .style('text-anchor', 'middle')
         // 设置颜色
-        .style('fill', 'white')
+        .style('fill', 'black')
         // 设置字体大小
         .style('font-size', '15px')
         // 设置字体的粗细
@@ -181,7 +181,7 @@ const ConstructGraph = (data) => {
         link
             // 设置边的
             .attr("d", function (d) {
-                console.log(d)
+                // console.log(d)
                 if (d.source.x < d.target.x) {
                     return "M " + d.source.x + " " + d.source.y + " L " + d.target.x + " " + d.target.y
                 }
