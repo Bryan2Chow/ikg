@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Input, Card } from 'antd';
 import { nanoid } from 'nanoid';
+import { DeploymentUnitOutlined } from '@ant-design/icons';
 import './style/style.css'
 import TextArea from 'antd/lib/input/TextArea';
 import { ConstructGraph } from './components/ConstructGraph';
@@ -708,15 +709,23 @@ export default class QualityReasoningQuestion extends Component {
                     </div>
                     <div style={{ width: "35%", height: "70%" }}>
                         <h3 style={{ marginTop: 15 }}>| 相关链接</h3>
-                        <div style={{ backgroundColor: "#F1F1F1", height: '90%' }}>
-                            <ul style={{ listStyleType: 'none', height: "100%" }}>
-                                <li ><a style={{ color: 'black  ' }}>数控机床X轴镉一段时间就跑尺寸, 求助-数控技术-机械社区</a></li>
+                        <div style={{ height: '90%' }}>
+                            <ul style={{ listStyleType: 'none', padding: 0 }}>
+                                <li >
+                                    <DeploymentUnitOutlined />&nbsp;
+                                    <a href="http://www.cmiw.cn/" target={'_blank'} style={{ color: 'black' }}>数控机床X轴镉一段时间就跑尺寸, 求助-数控技术-机械社区</a>
+                                </li>
                                 <hr />
-                                <li><a style={{ color: 'black  ' }}>数控机床X轴尺寸忽大忽小怎么办-中华文本库</a></li>
+                                <li>
+                                    <DeploymentUnitOutlined />&nbsp;
+                                    <a href="http://www.chinawenben.com/" target={'_blank'} style={{ color: 'black' }}>数控机床X轴尺寸忽大忽小怎么办-中华文本库</a></li>
                                 <hr />
-                                <li><a style={{ color: 'black  ' }}>cnc机床间隙调整方法-百度文库</a></li>
+                                <li><DeploymentUnitOutlined />&nbsp;
+                                    <a href="https://wenku.baidu.com/" target={'_blank'} style={{ color: 'black' }}>cnc机床间隙调整方法-百度文库</a></li>
                                 <hr />
-                                <li><a style={{ color: 'black  ' }}> 各位大佬沈阳机床的数控车床每次开关机之后, x轴显示向下</a></li>
+                                <li><DeploymentUnitOutlined />&nbsp;
+                                    <a href="http://www.cmiw.cn/" target={'_blank'} style={{ color: 'black' }}>各位大佬沈阳机床的数控车床每次开关机之后, x轴显示向下</a></li>
+                                <hr />
                             </ul>
                         </div>
                     </div>
