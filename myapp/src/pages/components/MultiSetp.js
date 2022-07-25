@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-import { Card, Button, Input, Select } from 'antd';
+import { Button, Input, Select } from 'antd';
 import { ConstructGraph } from './ConstructGraph';
 import { nanoid } from 'nanoid';
 const { Search } = Input;
 const { Option } = Select;
+let HeadList = [];
+let TotalLinks = [];
+let TailList = []
 export default class MultiSetp extends Component {
     state = {
         MultiSetpNumber: [1, 2, 3, 4, 5],
-        SelectedRelation: '',
+        SelectedRelation: 1,
         data: {
             nodes: [
                 { "id": "工件", "label": '工件', "name": '工件', "group": 1 },
@@ -646,32 +649,79 @@ export default class MultiSetp extends Component {
             width: 1000,
             height: 1000,
             colorList: ['#FD7623', '#3388B1', '#D82952', '#F3D737', '#409071', '#D64E52'],
-        }
+        },
+        // 将链存储在这里面
+        MultiArrau: []
 
     };
     MultiSetpNumber = (e) => {
-        console.log(e);
         this.setState({
-            SelectedRelation: e
+            SelectedRelation: Number(e)
         })
     };
+    SelectedEntity = (e) => {
+        // console.log(e.target.value)
+        HeadList.push(e.target.value)
+    }
     QueryBasedMultistep = () => {
+
         const removechild = document.getElementsByClassName('svgs')
         let amounts = removechild.length
         const parentnodes = document.getElementsByClassName('container')
         for (var i = 0; i < amounts; i++) {
             parentnodes[0].removeChild(removechild[0])
         }
-        ConstructGraph(this.state.data)
+
+        for (i = 0; i < this.state.SelectedRelation; i++) {
+            // 获取links
+            let linksobj = this.state.data.links.filter((linkObj) => {
+                return HeadList.includes(linkObj.source)
+            })
+            TailList = linksobj.map((obj) => {
+                return obj.source
+            })
+            HeadList = HeadList.filter((e) => {
+                return TailList.includes(e)
+            })
+            linksobj = this.state.data.links.filter((linkObj) => {
+                return HeadList.includes(linkObj.source)
+            })
+            // 临时变量取空,headlist取空
+            HeadList = []
+            // 遍历links将target存放在headlist中
+            HeadList = linksobj.map((obj) => {
+                return obj.target
+            })
+            // 将获取到links保存在总的links中
+            TotalLinks = TotalLinks.concat(linksobj)
+            // 将临时存储取空
+            linksobj = []
+        }
+
+        console.log(TotalLinks)
+        const newNodess = this.state.data.nodes.filter((nodesobj) => {
+            return TotalLinks.find((nelinksobj) => {
+                return nelinksobj.source === nodesobj.name || nelinksobj.target === nodesobj.name
+            })
+        })
+        console.log(newNodess)
+        const GraphData = {
+            links: TotalLinks,
+            nodes: newNodess,
+            width: 1000,
+            height: 1000,
+            colorList: ['#FD7623', '#3388B1', '#D82952', '#F3D737', '#409071', '#D64E52'],
+        }
+        ConstructGraph(GraphData)
+        TotalLinks = []
     }
     render() {
-        console.log(this)
         if (this.props.CheckInfor.Multi === true) {
             return (
                 <div style={{ marginTop: 50 }}>
                     <h3 style={{ marginTop: 20 }}>| 追溯信息</h3>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                        <Input placeholder='请输入查询节点名称' style={{ width: "20%" }} />
+                        <Input placeholder='请输入查询节点名称' style={{ width: "20%" }} onChange={this.SelectedEntity} />
                         <Select
                             style={{
                                 width: 200,

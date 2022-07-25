@@ -741,7 +741,6 @@ export default class ShortestPath extends Component {
         ]
     }
     SearchBasedEntity = (e) => {
-        console.log(e)
         // 选择数据
         const newLinks = this.state.data.links.filter((linksObj) => {
             return linksObj.source === e || linksObj.target === e
@@ -782,7 +781,6 @@ export default class ShortestPath extends Component {
         this.setState({
             ListData: newData
         })
-        console.log(data)
     }
     render() {
         if (this.props.CheckInfor.ShortPath === true) {
@@ -821,11 +819,6 @@ export default class ShortestPath extends Component {
         } else {
             return null
         }
-
-    }
-    componentDidMount() {
-        // console.log(this);
-        // console.log(typeof (ConstructGraph))
 
     }
 }
