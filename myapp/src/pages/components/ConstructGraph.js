@@ -170,7 +170,7 @@ const ConstructGraph = (data) => {
         .attr("dx", function () {
             // 获得节点字的长度
             // console.log(this.getBoundingClientRect().width)
-            return this.getBoundingClientRect().width * (-1)
+            return this.getBoundingClientRect().width / 2 * (-1)
         })
         .attr("dy", 0)
         .attr("fill", "black")

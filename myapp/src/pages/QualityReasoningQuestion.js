@@ -713,18 +713,18 @@ export default class QualityReasoningQuestion extends Component {
                             <ul style={{ listStyleType: 'none', padding: 0 }}>
                                 <li >
                                     <DeploymentUnitOutlined />&nbsp;
-                                    <a href="http://www.cmiw.cn/" target={'_blank'} style={{ color: 'black' }}>数控机床X轴镉一段时间就跑尺寸, 求助-数控技术-机械社区</a>
+                                    <a href="http://www.cmiw.cn/" target={'_blank'} rel="noreferrer" style={{ color: 'black' }}>数控机床X轴镉一段时间就跑尺寸, 求助-数控技术-机械社区</a>
                                 </li>
                                 <hr />
                                 <li>
                                     <DeploymentUnitOutlined />&nbsp;
-                                    <a href="http://www.chinawenben.com/" target={'_blank'} style={{ color: 'black' }}>数控机床X轴尺寸忽大忽小怎么办-中华文本库</a></li>
+                                    <a href="http://www.chinawenben.com/" target={'_blank'} rel="noreferrer" style={{ color: 'black' }}>数控机床X轴尺寸忽大忽小怎么办-中华文本库</a></li>
                                 <hr />
                                 <li><DeploymentUnitOutlined />&nbsp;
-                                    <a href="https://wenku.baidu.com/" target={'_blank'} style={{ color: 'black' }}>cnc机床间隙调整方法-百度文库</a></li>
+                                    <a href="https://wenku.baidu.com/" target={'_blank'} rel="noreferrer" style={{ color: 'black' }}>cnc机床间隙调整方法-百度文库</a></li>
                                 <hr />
                                 <li><DeploymentUnitOutlined />&nbsp;
-                                    <a href="http://www.cmiw.cn/" target={'_blank'} style={{ color: 'black' }}>各位大佬沈阳机床的数控车床每次开关机之后, x轴显示向下</a></li>
+                                    <a href="http://www.cmiw.cn/" target={'_blank'} rel="noreferrer" style={{ color: 'black' }}>各位大佬沈阳机床的数控车床每次开关机之后, x轴显示向下</a></li>
                                 <hr />
                             </ul>
                         </div>
