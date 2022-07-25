@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "18267958",
+      "name": "数据库",
+      "font_class": "shujuku",
+      "unicode": "e997",
+      "unicode_decimal": 59799
+    }
+  ]
+}

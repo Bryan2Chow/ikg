@@ -28,7 +28,7 @@ export default class HomePage extends Component {
     }
     render() {
         return (
-            <div style={{ height: "100%", overflow: 'hidden' }}>
+            <div style={{ height: "100%" }}>
 
                 <div className="jumbotron" style={{
                     width: '90%',
@@ -74,7 +74,7 @@ export default class HomePage extends Component {
                 </div >
 
 
-                <div style={{ textAlign: 'center', height: "8%", marginTop: 20, display: "flex", justifyContent: "center", marginBottom: 40 }}>
+                <div style={{ textAlign: 'center', height: "10%", marginTop: 20, display: "flex", justifyContent: "center", marginBottom: 40 }}>
                     <div style={{ marginRight: 100, padding: 10, backgroundColor: "#364d79" }}>
                         <h3 style={{ color: 'white' }}>实体数量： {this.state.EntityNumbers}</h3>
                     </div>

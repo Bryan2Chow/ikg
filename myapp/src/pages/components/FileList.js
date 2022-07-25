@@ -21,7 +21,6 @@ export default class FileList extends Component {
             <div style={{ width: "100%" }}>
                 <Checkbox.Group style={{ textAlign: 'center', width: '100%', display: 'flex', justifyContent: 'space-around' }} onChange={this.CheckChange}>
                     {
-
                         selectedfile.map((file, index) => {
                             return (
                                 <div style={{}} key={index}>
@@ -30,7 +29,6 @@ export default class FileList extends Component {
                                     </Checkbox>
                                     <h2>{index}</h2>
                                 </div>
-
                             )
                         })
 

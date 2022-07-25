@@ -90,9 +90,6 @@ export default class FileOrgnize extends Component {
         })
     }
 
-
-
-
     render() {
         return (
             <div  >

@@ -12,6 +12,7 @@ import QualityReasoningQuestion from '../pages/QualityReasoningQuestion';
 import QualtiyDatum from '../pages/QualtiyDatum';
 import QualityGraph from '../pages/components/QualityGraph';
 import MangementProduction from '../pages/components/MangementProduction';
+import './Navi.css'
 const { Header, Content, Sider } = Layout;
 export default class NavBar extends Component {
 
@@ -19,10 +20,11 @@ export default class NavBar extends Component {
         return (
             <Layout style={{ width: '100%', height: '100%' }}>
                 {/* 标题头 */}
-                <Header className="header" style={{ color: 'skyblue' }}>
+                <Header className="header" style={{}}>
                     <div>
-                        <h1 style={{ color: 'white', float: 'left ' }}>薄壁壳体加工质量知识图管理与应用原型系统</h1>
-                        <div style={{ float: 'right' }}>
+                        <span className="iconfont" style={{ color: 'white', float: 'left ' }}>&#xe997;</span>
+                        <h1 style={{ color: 'white', float: 'left ' }}>薄壁壳体加工质量知识图谱管理与应用原型系统</h1>
+                        <div style={{ float: 'right', color: 'white' }}>
                             <Avatar size='large' icon={<UserOutlined />} />&nbsp;&nbsp;
                             <Space>
                                 dhu-KGadmin
@@ -38,6 +40,8 @@ export default class NavBar extends Component {
                             theme="dark"
                             mode="inline"
                             defaultSelectedKeys={['/HomePage']}
+                            color="rgb(56,135,205)"
+
                             items={
                                 [
                                     {
@@ -112,6 +116,7 @@ export default class NavBar extends Component {
 
                             }}
                         >
+
                             <Routes>
                                 <Route path='/HomePage' element={<HomePage />} />
                                 <Route path='/FileOrgnize/FileManagement' element={<FileOrgnize />} />
@@ -127,7 +132,7 @@ export default class NavBar extends Component {
                         </Content>
                     </Layout>
                 </Layout>
-            </Layout>
+            </Layout >
         )
     }
 }

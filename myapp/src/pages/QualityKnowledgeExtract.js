@@ -39,7 +39,7 @@ export default class QualityKnowledgeExtract extends Component {
 
                     <div style={{ width: '45%' }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <h3 style={{ margin: 0, marginLeft: 10 }}>| 语义依存句法分析 </h3>
+                            <h3 style={{ margin: 0, marginLeft: 10 }}>| 知识图谱三元组 </h3>
                             <Button type="primary" style={{ marginLeft: '50%' }}>生成</Button>
                         </div>
                         <TextArea style={{ height: 200, marginTop: 10 }} />
