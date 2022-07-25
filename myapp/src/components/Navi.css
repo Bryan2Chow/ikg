@@ -28,6 +28,7 @@
 .ant-layout-header {
     color: rgb(56, 135, 205);
     background: rgb(56, 135, 205);
+    padding-left: 0;
 
 }
 
