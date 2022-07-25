@@ -35,3 +35,8 @@
 .list-group-item {
     color: white;
 }
+
+.ant-carousel .slick-dots li button {
+    /* background-color: darkslategray; */
+    background: black;
+}
