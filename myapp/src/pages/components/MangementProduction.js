@@ -27,7 +27,7 @@ class MangementProduction extends Component {
           <Image preview={false} src={require("../img/PDM.png")} alt="哈哈哈哈" />
           <br />
           <br />
-          <a href="http://127.0.0.1:8080/149Platform/erp/index.html?_dc=1657764504019" className="FakeBtn">PDM</a>
+          <a href="http://127.0.0.1:8080/149Platform/pdm/login.html" className="FakeBtn">PDM</a>
         </Col>
         <Col
           xs={{
@@ -42,7 +42,7 @@ class MangementProduction extends Component {
           <Image preview={false} src={require("../img/ERP.png")} />
           <br />
           <br />
-          <a href="http://127.0.0.1:8080/149Platform/mes/index.html?_dc=1657764511587" className="FakeBtn">ERP系统</a>
+          <a href="http://127.0.0.1:8080/149Platform/erp/login.html" className="FakeBtn">ERP系统</a>
         </Col>
         <Col
           xs={{
@@ -57,7 +57,7 @@ class MangementProduction extends Component {
           <Image preview={false} src={require("../img/MES.png")} />
           <br />
           <br />
-          <a href="http://127.0.0.1:8080/149Platform/erp/index.html?_dc=1657764504019" className="FakeBtn">MES系统</a>
+          <a href="http://127.0.0.1:8080/149Platform/mes/login.html" className="FakeBtn">MES系统</a>
         </Col>
       </Row>
       </div>
