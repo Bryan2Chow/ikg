@@ -18,14 +18,14 @@ export default class FileList extends Component {
             selectedfile = DetectiveImg.slice(5 * pages - 5, 5 * pages)
         }
         return (
-            <div style={{ width: "100%" }}>
+            <div style={{ width: "100%", marginTop: " 40px" }}>
                 <Checkbox.Group style={{ textAlign: 'center', width: '100%', display: 'flex', justifyContent: 'space-around' }} onChange={this.CheckChange}>
                     {
                         selectedfile.map((file, index) => {
                             return (
                                 <div style={{}} key={index}>
                                     < Checkbox value={index}>
-                                        <Image style={{ height: "300px", paddingTop: "35px", paddingBottom: "35px" }} src={require('../img/1.png')}></Image>
+                                        <Image style={{ height: "400px", paddingTop: "35px", paddingBottom: "35px" }} src={require('../img/1.png')}></Image>
                                     </Checkbox>
                                     <h2>{index}</h2>
                                 </div>

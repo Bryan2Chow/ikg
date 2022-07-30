@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Input, Select } from 'antd';
+import { Button, Card, Input, Select } from 'antd';
 import { ConstructGraph } from './ConstructGraph';
 import { nanoid } from 'nanoid';
 const { Search } = Input;
@@ -718,7 +718,7 @@ export default class MultiSetp extends Component {
     render() {
         if (this.props.CheckInfor.Multi === true) {
             return (
-                <div style={{ marginTop: 50 }}>
+                <div style={{ height: "100%" }}>
                     <h3 style={{ marginTop: 20 }}>| 追溯信息</h3>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                         <Input placeholder='请输入查询节点名称' style={{ width: "20%" }} onChange={this.SelectedEntity} />
@@ -739,7 +739,7 @@ export default class MultiSetp extends Component {
                     </div>
 
                     <h3 style={{ marginTop: 20 }}>| 图追溯信息路径关系图谱</h3>
-                    <div className='container'></div>
+                    <Card className='container' style={{ height: "76%", overflow: 'hidden' }}></Card>
                 </div>
             )
         } else {

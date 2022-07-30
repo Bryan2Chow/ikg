@@ -20,7 +20,7 @@ export default class NavBar extends Component {
         return (
             <Layout style={{ width: '100%', height: '100%' }}>
                 {/* 标题头 */}
-                <Header className="header" style={{}}>
+                <Header className="header" >
                     <div>
                         <span className="iconfont" style={{ color: 'white', float: 'left ' }}>&#xe997;</span>
                         <h1 style={{ color: 'white', float: 'left ' }}>薄壁壳体加工质量知识图谱管理与应用原型系统</h1>
@@ -103,7 +103,7 @@ export default class NavBar extends Component {
                     </Sider>
                     <Layout
                         style={{
-                            padding: '0 24px 24px',
+                            // padding: '0 24px 24px',
                             backgroundColor: "#fff"
                         }}
                     >

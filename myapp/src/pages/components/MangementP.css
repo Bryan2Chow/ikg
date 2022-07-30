@@ -1,0 +1,9 @@
+.ant-col-xs-offset-1 {
+    margin-left: 0;
+}
+
+.ant-row {
+    /* height: "100%"; */
+    justify-content: space-around;
+    align-items: flex-start;
+}

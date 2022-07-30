@@ -37,6 +37,9 @@
   display: flex;
   justify-content: space-between;
 }
+.ReasoningQuestion .ant-card-body {
+  padding: 0;
+}
 .container {
   width: 100%;
   margin-left: auto;

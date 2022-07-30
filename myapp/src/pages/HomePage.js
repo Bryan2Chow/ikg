@@ -72,9 +72,9 @@ export default class HomePage extends Component {
                         </div>
                     </Carousel>
                 </div >
+                <br />
 
-
-                <div style={{ textAlign: 'center', height: "10%", marginTop: 20, display: "flex", justifyContent: "center", marginBottom: 40 }}>
+                <div style={{ textAlign: 'center', height: "10%", marginTop: 20, display: "flex", justifyContent: "center", alignItems: 'center', marginBottom: 40 }}>
                     <div style={{ marginRight: 100, padding: 10, backgroundColor: "rgb(242,242,242)" }}>
                         <h3 style={{ color: 'black' }}>实体数量： {this.state.EntityNumbers}</h3>
                     </div>
@@ -83,7 +83,7 @@ export default class HomePage extends Component {
                     </div>
                 </div>
 
-                <footer style={{ height: "20%" }} >
+                <footer style={{ height: "20%", textAlign: 'center', overflow: 'hidden' }} >
                     <hr />
                     <div style={{ textAlign: "center", position: "relative" }}><b>Powered by 薄壁壳体加工质量知识图谱管理与应用原型系统 | Copyright © 2020-2022 Institute of Intelligent Manufacturing@ Donghua University All Rights Reserved</b></div>
                 </footer>

@@ -735,7 +735,7 @@ export default class RelationQuery extends Component {
     render() {
         if (this.props.CheckInfor.Relation === true) {
             return (
-                <div style={{ marginTop: 50 }}>
+                <div style={{ height: "100%" }}>
                     <h3 style={{ marginTop: 20 }}>| 实体信息</h3>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                         <Input placeholder='输入头实体' style={{ width: "20%" }} onChange={this.HeadEntity} />
@@ -756,9 +756,9 @@ export default class RelationQuery extends Component {
                     </div>
 
                     <h3 style={{ marginTop: 20 }}>| 关系图谱</h3>
-                    <div className='container'>
+                    <Card className='container' style={{ height: "76%", overflow: 'hidden' }}>
                         {/* {this.state.Fact.Tail} */}
-                    </div>
+                    </Card>
                 </div>
             )
         } else {

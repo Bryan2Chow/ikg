@@ -19,13 +19,13 @@ export default class FileAnalyze extends Component {
         return (
             <div style={{ margin: 'auto', height: '100%', display: 'flex', justifyContent: "space-around" }}>
                 <div style={{ width: "45%", height: '100%' }}>
-                    <div style={{ height: "20%" }}>
+                    <div style={{ height: "13%" }}>
                         <Input type='file' style={{ width: '20%', marginRight: 30 }} onChange={this.addUrl} />
                         <Button style={{ marginRight: 30 }}>表格检测</Button>
                         <Button >表格信息识别</Button>
                         <h2 style={{ marginTop: 20 }}>| 文档预览</h2>
                     </div>
-                    <Card style={{ height: "80%" }}>
+                    <Card style={{ height: "85%", overflow: 'hidden' }}>
                         <img id="preview" style={{ width: '85%' }}></img>
                     </Card>
                 </div>

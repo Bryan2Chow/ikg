@@ -786,25 +786,25 @@ export default class EntityQuery extends Component {
     render() {
         if (this.props.CheckInfor.Entity === true) {
             return (
-                <div style={{ marginTop: 50, height: "100%" }}>
+                <div style={{ height: "100%" }}>
                     <h3 style={{ marginTop: 20 }}>| 实体信息</h3>
                     <Search enterButton="开始查询" placeholder='输入实体名称' onSearch={this.SearchBasedEntity} />
 
-                    <div style={{ marginTop: 20, display: 'flex', justifyContent: 'space-between' }}>
-                        <div style={{ width: "45%" }}>
+                    <div style={{ marginTop: 20, height: "80%", display: 'flex', justifyContent: 'space-between' }}>
+                        <div style={{ width: "45%", height: "100%" }}>
                             <h3>| 关系图谱</h3>
-                            <div className='container'></div>
+                            <Card className='container' style={{ height: "95%", overflow: 'hidden' }}></Card>
                         </div>
-                        <div style={{ width: "45%" }}>
+                        <div style={{ width: "45%", height: "100%" }}>
                             <h3>| 关系列表</h3>
-                            <Card>
+                            <Card style={{ height: "95%", overflow: 'hidden' }}>
                                 <Table
                                     columns={columns}
                                     dataSource={this.state.ListData}
                                     bordered
                                     title={() => '关系列表'}
                                     pagination={{
-                                        pageSize: 4
+                                        pageSize: 7
                                     }}
                                 />
                             </Card>

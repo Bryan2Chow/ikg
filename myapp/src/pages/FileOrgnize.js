@@ -92,8 +92,8 @@ export default class FileOrgnize extends Component {
 
     render() {
         return (
-            <div  >
-                <div>
+            <div style={{ height: "100%" }} >
+                <div style={{ height: "12%" }}>
                     {/* veticalalign为了使得button和space在一跳直线上 */}
                     <Radio.Group defaultValue="加工过程文档" buttonStyle="solid" style={{ verticalAlign: 'middle' }}>
                         <Radio.Button value="加工过程文档" style={{ marginRight: 100 }} onClick={this.ChagngModel}>加工过程文档</Radio.Button>
@@ -110,7 +110,7 @@ export default class FileOrgnize extends Component {
                         />
                     </Space>
                 </div>
-                <div style={{ marginTop: 40 }}>
+                <div style={{ height: '12% ' }}>
                     <Button style={{ marginRight: 40 }} onClick={this.addFile}><DiffOutlined />添加</Button>
                     {/*点击添加按钮进行文件的添加 */}
                     <Modal title="添加文件" visible={this.state.isModalVisbale} onOk={this.handleOk} onCancel={this.handleCancel}>
@@ -171,7 +171,7 @@ export default class FileOrgnize extends Component {
                         <Radio.Button value="按时间排序" >按时间排序</Radio.Button>
                     </Radio.Group>
                 </div>
-                <Card style={{ marginTop: 40 }}>
+                <div style={{ height: "76%", border: '1px solid rgb(242, 242, 242)' }}>
                     <FileList DataInfo={this.state.DataInfo} />
                     <br />
                     <br />
@@ -184,7 +184,7 @@ export default class FileOrgnize extends Component {
                         style={{ textAlign: 'center' }}
                         onChange={this.PageValue}
                     />
-                </Card>
+                </div>
 
             </div>
         )

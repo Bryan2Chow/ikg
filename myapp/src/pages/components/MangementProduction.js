@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Col, Row, Image } from "antd";
 import '../style/style.css'
+import './MangementP.css'
 
 class MangementProduction extends Component {
   constructor(props) {
@@ -9,57 +10,57 @@ class MangementProduction extends Component {
   }
   render() {
     return (
-        <div>
-        <br/>
-        <br/>
-        <Row style={{textAlign:"center",fontSize:"20px"}}>
-        <Col
-          xs={{
-            span: 5,
-            offset: 1,
-          }}
-          lg={{
-            span: 6,
-            offset: 2,
-          }}
-          
-        >
-          <Image preview={false} src={require("../img/PDM.png")} alt="哈哈哈哈" />
-          <br />
-          <br />
-          <a href="http://127.0.0.1:8080/149Platform/erp/index.html?_dc=1657764504019" className="FakeBtn">PDM</a>
-        </Col>
-        <Col
-          xs={{
-            span: 11,
-            offset: 1,
-          }}
-          lg={{
-            span: 6,
-            offset: 2,
-          }}
-        >
-          <Image preview={false} src={require("../img/ERP.png")} />
-          <br />
-          <br />
-          <a href="http://127.0.0.1:8080/149Platform/mes/index.html?_dc=1657764511587" className="FakeBtn">ERP系统</a>
-        </Col>
-        <Col
-          xs={{
-            span: 5,
-            offset: 1,
-          }}
-          lg={{
-            span: 6,
-            offset: 2,
-          }}
-        >
-          <Image preview={false} src={require("../img/MES.png")} />
-          <br />
-          <br />
-          <a href="http://127.0.0.1:8080/149Platform/erp/index.html?_dc=1657764504019" className="FakeBtn">MES系统</a>
-        </Col>
-      </Row>
+      <div style={{ height: "100%", textAlign: 'center', width: "100%" }}>
+        <br />
+        <br />
+        <Row style={{ fontSize: "20px", textAlign: "center", height: "100%", marginTop: "50px" }}>
+          <Col
+            xs={{
+              span: 5,
+              offset: 1,
+            }}
+            lg={{
+              span: 6,
+              offset: 2,
+            }}
+
+          >
+            <Image preview={false} src={require("../img/PDM.png")} alt="哈哈哈哈" />
+            <br />
+            <br />
+            <a href="http://127.0.0.1:8080/149Platform/erp/index.html?_dc=1657764504019" className="FakeBtn">PDM</a>
+          </Col>
+          <Col
+            xs={{
+              span: 11,
+              offset: 1,
+            }}
+            lg={{
+              span: 6,
+              offset: 2,
+            }}
+          >
+            <Image preview={false} src={require("../img/ERP.png")} />
+            <br />
+            <br />
+            <a href="http://127.0.0.1:8080/149Platform/mes/index.html?_dc=1657764511587" className="FakeBtn">ERP系统</a>
+          </Col>
+          <Col
+            xs={{
+              span: 5,
+              offset: 1,
+            }}
+            lg={{
+              span: 6,
+              offset: 2,
+            }}
+          >
+            <Image preview={false} src={require("../img/MES.png")} />
+            <br />
+            <br />
+            <a href="http://127.0.0.1:8080/149Platform/erp/index.html?_dc=1657764504019" className="FakeBtn">MES系统</a>
+          </Col>
+        </Row>
       </div>
     );
   }

@@ -672,9 +672,9 @@ export default class QualityReasoningQuestion extends Component {
     render() {
         return (
             <div className='ReasoningQuestion' style={{ height: "100%" }}>
-                <div className='QuestionDescription' style={{ height: "22%" }}>
+                <div className='QuestionDescription' style={{ height: "15%" }}>
                     <h3>| 问题描述</h3>
-                    <Card className="SubQuestionDescription" style={{ height: "100%" }} >
+                    <div className="SubQuestionDescription"  >
                         <Search
                             placeholder='请输入问题描述...'
                             enterButton='开始搜素'
@@ -688,7 +688,7 @@ export default class QualityReasoningQuestion extends Component {
                                 旋压机床加工薄壁件产生周向断裂的原因？薄壁壳体焊缝出现气孔的解决方案？
                             </a>
                         </span>
-                    </Card>
+                    </div>
                 </div>
                 <br />
                 <div className='QuestionResult' style={{ height: "15%" }}>
@@ -702,30 +702,43 @@ export default class QualityReasoningQuestion extends Component {
                     </div>
                 </div>
                 <br />
-                <div className='RealtionShow' style={{ height: "63%" }}>
+                <div className='RealtionShow' style={{ height: "70%" }}>
                     <div style={{ width: "60%", height: "100%" }}>
-                        <h3 style={{ marginTop: 20 }}>| 关系图谱</h3>
-                        <div className='container' style={{ height: "100%" }} ></div>
+                        <h3>| 关系图谱</h3>
+                        <Card className='container' style={{ height: "100%", height: "80%", overflow: 'hidden' }} ></Card>
                     </div>
-                    <div style={{ width: "35%", height: "70%" }}>
-                        <h3 style={{ marginTop: 15 }}>| 相关链接</h3>
-                        <div style={{ height: '90%' }}>
-                            <ul style={{ listStyleType: 'none', padding: 0 }}>
-                                <li >
-                                    <DeploymentUnitOutlined />&nbsp;
+                    <div style={{ width: "35%", height: "100%" }}>
+                        <h3 >| 相关链接</h3>
+                        <div style={{ height: '100%' }}>
+                            <ul style={{ listStyleType: 'none', padding: 0, height: "80%", display: 'flex', flexDirection: 'column', justifyContent: 'space-around' }}>
+                                <li style={{}}>
+                                    <DeploymentUnitOutlined />
                                     <a href="http://www.cmiw.cn/" target={'_blank'} rel="noreferrer" style={{ color: 'black' }}>数控机床X轴镉一段时间就跑尺寸, 求助-数控技术-机械社区</a>
+                                    <hr />
                                 </li>
-                                <hr />
+
                                 <li>
-                                    <DeploymentUnitOutlined />&nbsp;
-                                    <a href="http://www.chinawenben.com/" target={'_blank'} rel="noreferrer" style={{ color: 'black' }}>数控机床X轴尺寸忽大忽小怎么办-中华文本库</a></li>
-                                <hr />
-                                <li><DeploymentUnitOutlined />&nbsp;
-                                    <a href="https://wenku.baidu.com/" target={'_blank'} rel="noreferrer" style={{ color: 'black' }}>cnc机床间隙调整方法-百度文库</a></li>
-                                <hr />
-                                <li><DeploymentUnitOutlined />&nbsp;
-                                    <a href="http://www.cmiw.cn/" target={'_blank'} rel="noreferrer" style={{ color: 'black' }}>各位大佬沈阳机床的数控车床每次开关机之后, x轴显示向下</a></li>
-                                <hr />
+                                    <DeploymentUnitOutlined />
+                                    <a href="http://www.chinawenben.com/" target={'_blank'} rel="noreferrer" style={{ color: 'black' }}>数控机床X轴尺寸忽大忽小怎么办-中华文本库</a>
+                                    <hr /></li>
+
+                                <li><DeploymentUnitOutlined />
+                                    <a href="https://wenku.baidu.com/" target={'_blank'} rel="noreferrer" style={{ color: 'black' }}>cnc机床间隙调整方法-百度文库</a>
+                                    <hr /></li>
+
+                                <li><DeploymentUnitOutlined />
+                                    <a href="http://www.cmiw.cn/" target={'_blank'} rel="noreferrer" style={{ color: 'black' }}>各位大佬沈阳机床的数控车床每次开关机之后, x轴显示向下</a>
+                                    <hr /></li>
+
+                                <li><DeploymentUnitOutlined />
+                                    <a href="http://www.cmiw.cn/" target={'_blank'} rel="noreferrer" style={{ color: 'black' }}>普通高速精密加工车床的表面粗糙度达不到要求。是什么原因？</a>
+                                    <hr /></li>
+                                <li><DeploymentUnitOutlined />
+                                    <a href="http://www.cmiw.cn/" target={'_blank'} rel="noreferrer" style={{ color: 'black' }}>cnc金属加工和钻孔时阻力过大是什么原因?不打孔的原因是什么？</a>
+                                    <hr /></li>
+                                <li><DeploymentUnitOutlined />
+                                    <a href="http://www.cmiw.cn/" target={'_blank'} rel="noreferrer" style={{ color: 'black' }}>车刀不断崩刃，如何解决？</a>
+                                    <hr /></li>
                             </ul>
                         </div>
                     </div>
