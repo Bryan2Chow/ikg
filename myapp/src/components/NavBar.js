@@ -56,6 +56,11 @@ export default class NavBar extends Component {
                                         label: <Link className="list-group-item" to="/FileOrgnize">面向质量的信息集成</Link>,
                                         children: [
                                             {
+                                                key: '/FileOrgnize/MangementProduction',
+                                                icon: <UserOutlined />,
+                                                label: <Link className="list-group-item" to="/FileOrgnize/MangementProduction">生产系统管理</Link>,
+                                            },
+                                            {
                                                 key: '/FileOrgnize/FileManagement',
                                                 icon: <UserOutlined />,
                                                 label: <Link className="list-group-item" to="/FileOrgnize/FileManagement">文档管理</Link>,
@@ -64,11 +69,6 @@ export default class NavBar extends Component {
                                                 key: '/FileOrgnize/FileAnalyze',
                                                 icon: <LineChartOutlined />,
                                                 label: <Link className="list-group-item" to="/FileOrgnize/FileAnalyze">文档分析</Link>,
-                                            },
-                                            {
-                                                key: '/FileOrgnize/MangementProduction',
-                                                icon: <UserOutlined />,
-                                                label: <Link className="list-group-item" to="/FileOrgnize/MangementProduction">生产系统管理</Link>,
                                             },
                                             {
                                                 key: '/FileOrgnize/QualityKnowledgeExtract',

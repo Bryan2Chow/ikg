@@ -77,12 +77,15 @@ export default class HomePage extends Component {
                 </div >
                 <br />
 
-                <div style={{ textAlign: 'center', height: "10%", marginTop: 38, display: "flex", justifyContent: "center", alignItems: 'center', marginBottom: 40 }}>
-                    <div style={{ marginRight: 100, padding: 10, backgroundColor: "rgb(242,242,242)" }}>
+                <div style={{ textAlign: 'center', height: "10%", marginTop: 38, display: "flex", justifyContent: 'space-around', alignItems: 'center', marginBottom: 40 }}>
+                    <div style={{ padding: 10, backgroundColor: "rgb(242,242,242)" }}>
                         <h3 style={{ color: 'black' }}>实体数量： {this.state.EntityNumbers}</h3>
                     </div>
-                    <div style={{ marginLeft: 100, padding: 10, backgroundColor: "rgb(242,242,242)" }}>
+                    <div style={{ padding: 10, backgroundColor: "rgb(242,242,242)" }}>
                         <h3 style={{ color: 'black' }}>关系数量： {this.state.RealtionNumbers}</h3>
+                    </div>
+                    <div style={{ padding: 10, backgroundColor: "rgb(242,242,242)" }}>
+                        <h3 style={{ color: 'black' }}>三元组的数量： {510352}</h3>
                     </div>
                 </div>
 

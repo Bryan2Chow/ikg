@@ -171,7 +171,7 @@ export default class FileOrgnize extends Component {
                         <Radio.Button value="按时间排序" >按时间排序</Radio.Button>
                     </Radio.Group>
                 </div>
-                <div style={{ height: "78%", border: '1px solid rgb(242, 242, 242)' }}>
+                <div style={{ height: "78%", border: '1px solid rgb(242, 242, 242)', display: 'flex', flexDirection: 'column', justifyContent: 'space-around' }}>
                     <FileList DataInfo={this.state.DataInfo} />
                     <br />
                     <br />
