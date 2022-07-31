@@ -756,7 +756,7 @@ export default class RelationQuery extends Component {
                     </div>
 
                     <h3 style={{ marginTop: 20 }}>| 关系图谱</h3>
-                    <Card className='container' style={{ height: "76%", overflow: 'hidden' }}>
+                    <Card className='container' style={{ height: "78%", overflow: 'hidden' }}>
                         {/* {this.state.Fact.Tail} */}
                     </Card>
                 </div>

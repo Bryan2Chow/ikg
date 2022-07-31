@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Card, Input, Table } from 'antd';
 import { nanoid } from 'nanoid';
 import { ConstructGraph } from './ConstructGraph.js';
-import '../style/style.css'
+import '../style/style.css';
+import './EntityQuery.css'
 
 const { Search } = Input
 const columns = [
@@ -696,7 +697,7 @@ export default class EntityQuery extends Component {
 
             ],
             width: 1000,
-            height: 1000,
+            height: 3000,
             colorList: ['#FD7623', '#3388B1', '#D82952', '#F3D737', '#409071', '#D64E52'],
         }
         ,
@@ -762,7 +763,7 @@ export default class EntityQuery extends Component {
             links: newLinks,
             nodes: newNodess,
             width: 1000,
-            height: 1000,
+            height: 2000,
             colorList: ['#FD7623', '#3388B1', '#D82952', '#F3D737', '#409071', '#D64E52'],
         }
         ConstructGraph(GraphData)
@@ -791,20 +792,21 @@ export default class EntityQuery extends Component {
                     <Search enterButton="开始查询" placeholder='输入实体名称' onSearch={this.SearchBasedEntity} />
 
                     <div style={{ marginTop: 20, height: "80%", display: 'flex', justifyContent: 'space-between' }}>
-                        <div style={{ width: "45%", height: "100%" }}>
+                        <div style={{ width: "53%", height: "100%" }}>
                             <h3>| 关系图谱</h3>
-                            <Card className='container' style={{ height: "95%", overflow: 'hidden' }}></Card>
+                            <Card className='container' style={{ height: "97%", overflow: 'hidden' }}></Card>
                         </div>
                         <div style={{ width: "45%", height: "100%" }}>
                             <h3>| 关系列表</h3>
-                            <Card style={{ height: "95%", overflow: 'hidden' }}>
+                            <Card style={{ height: "97%", overflow: 'hidden' }}>
                                 <Table
+                                    marginTop="10px"
                                     columns={columns}
                                     dataSource={this.state.ListData}
                                     bordered
-                                    title={() => '关系列表'}
+                                    // title={() => '关系列表'}
                                     pagination={{
-                                        pageSize: 7
+                                        pageSize: 8
                                     }}
                                 />
                             </Card>

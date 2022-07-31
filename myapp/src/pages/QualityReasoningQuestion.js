@@ -672,7 +672,7 @@ export default class QualityReasoningQuestion extends Component {
     render() {
         return (
             <div className='ReasoningQuestion' style={{ height: "100%" }}>
-                <div className='QuestionDescription' style={{ height: "15%" }}>
+                <div className='QuestionDescription' style={{ height: "12%" }}>
                     <h3>| 问题描述</h3>
                     <div className="SubQuestionDescription"  >
                         <Search
@@ -691,26 +691,26 @@ export default class QualityReasoningQuestion extends Component {
                     </div>
                 </div>
                 <br />
-                <div className='QuestionResult' style={{ height: "15%" }}>
+                <div className='QuestionResult' style={{ height: "12%" }}>
                     <h3 >| 问题结果</h3>
                     <div>
-                        <TextArea value={this.state.QuestionResults} style={{ width: "60%", backgroundColor: "#F1F1F1" }} />
-                        <Card style={{ width: "35%", backgroundColor: "#F1F1F1" }}>
-                            <span>没有满意的解决方案？</span>
+                        <TextArea defaultValue={'旋轮成型角过大，进给比过大，壁厚减薄率过大'} style={{ width: "63%", backgroundColor: "#F1F1F1" }} />
+                        <Card style={{ width: "35%", backgroundColor: "#F1F1F1", display: 'flex', justifyContent: 'space-between', alignItems: 'center', }}>
+                            <span style={{ paddingLeft: "10px" }}>没有满意的解决方案？</span>
                             <Button type='primary' onClick={this.OnlineAnaly}>在线分析</Button>
                         </Card>
                     </div>
                 </div>
                 <br />
-                <div className='RealtionShow' style={{ height: "70%" }}>
-                    <div style={{ width: "60%", height: "100%" }}>
+                <div className='RealtionShow' style={{ height: "76%" }}>
+                    <div style={{ width: "63%", height: "100%" }}>
                         <h3>| 关系图谱</h3>
-                        <Card className='container' style={{ height: "100%", height: "80%", overflow: 'hidden' }} ></Card>
+                        <Card className='container' style={{ height: "100%", height: "85%", overflow: 'hidden' }} ></Card>
                     </div>
                     <div style={{ width: "35%", height: "100%" }}>
                         <h3 >| 相关链接</h3>
                         <div style={{ height: '100%' }}>
-                            <ul style={{ listStyleType: 'none', padding: 0, height: "80%", display: 'flex', flexDirection: 'column', justifyContent: 'space-around' }}>
+                            <ul style={{ listStyleType: 'none', padding: 0, height: "85%", display: 'flex', flexDirection: 'column', justifyContent: 'space-around' }}>
                                 <li style={{}}>
                                     <DeploymentUnitOutlined />
                                     <a href="http://www.cmiw.cn/" target={'_blank'} rel="noreferrer" style={{ color: 'black' }}>数控机床X轴镉一段时间就跑尺寸, 求助-数控技术-机械社区</a>

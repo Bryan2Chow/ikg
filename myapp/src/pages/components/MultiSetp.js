@@ -739,7 +739,7 @@ export default class MultiSetp extends Component {
                     </div>
 
                     <h3 style={{ marginTop: 20 }}>| 图追溯信息路径关系图谱</h3>
-                    <Card className='container' style={{ height: "76%", overflow: 'hidden' }}></Card>
+                    <Card className='container' style={{ height: "78%", overflow: 'hidden' }}></Card>
                 </div>
             )
         } else {

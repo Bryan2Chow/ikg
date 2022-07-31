@@ -12,13 +12,13 @@ export default class FileList extends Component {
         const { processingData, DetectiveImg, processingDataState, DetectiveImgState, pages } = this.props.DataInfo
         if (processingDataState) {
             // console.log(processingData);
-            selectedfile = processingData.slice(5 * pages - 5, 5 * pages)
+            selectedfile = processingData.slice(4 * pages - 4, 4 * pages)
         }
         if (DetectiveImgState) {
-            selectedfile = DetectiveImg.slice(5 * pages - 5, 5 * pages)
+            selectedfile = DetectiveImg.slice(4 * pages - 4, 4 * pages)
         }
         return (
-            <div style={{ width: "100%", marginTop: " 40px" }}>
+            <div style={{ width: "100%" }}>
                 <Checkbox.Group style={{ textAlign: 'center', width: '100%', display: 'flex', justifyContent: 'space-around' }} onChange={this.CheckChange}>
                     {
                         selectedfile.map((file, index) => {

@@ -97,7 +97,7 @@ export default class FileOrgnize extends Component {
                     {/* veticalalign为了使得button和space在一跳直线上 */}
                     <Radio.Group defaultValue="加工过程文档" buttonStyle="solid" style={{ verticalAlign: 'middle' }}>
                         <Radio.Button value="加工过程文档" style={{ marginRight: 100 }} onClick={this.ChagngModel}>加工过程文档</Radio.Button>
-                        <Radio.Button value="数字化检测图像" style={{ marginRight: 400 }} onClick={this.ChagngModel}>数字化检测图像</Radio.Button>
+                        <Radio.Button value="数字化检测图像" style={{ marginRight: 100 }} onClick={this.ChagngModel}>数字化检测图像</Radio.Button>
                     </Radio.Group>
                     <Space style={{ verticalAlign: 'middle' }}>
                         <Search
@@ -171,7 +171,7 @@ export default class FileOrgnize extends Component {
                         <Radio.Button value="按时间排序" >按时间排序</Radio.Button>
                     </Radio.Group>
                 </div>
-                <div style={{ height: "76%", border: '1px solid rgb(242, 242, 242)' }}>
+                <div style={{ height: "78%", border: '1px solid rgb(242, 242, 242)' }}>
                     <FileList DataInfo={this.state.DataInfo} />
                     <br />
                     <br />
