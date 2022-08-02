@@ -786,7 +786,7 @@ export default class ShortestPath extends Component {
         if (this.props.CheckInfor.ShortPath === true) {
             return (
                 <div style={{ height: "100% " }}>
-                    <h3 style={{ marginTop: 20 }}>| 实体信息</h3>
+                    <h3 style={{ marginTop: 20, fontSize: "19px" }}>| 实体信息</h3>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                         <Input placeholder='输入头实体' style={{ width: "20%" }} />
 
@@ -795,12 +795,12 @@ export default class ShortestPath extends Component {
                     </div>
 
                     <div style={{ marginTop: 20, display: 'flex', justifyContent: 'space-between', height: "80%" }}>
-                        <div style={{ width: "45%", height: "100%" }}>
-                            <h3>| 关系图谱</h3>
+                        <div style={{ width: "53%", height: "100%" }}>
+                            <h3 style={{ fontSize: "19px" }}>| 关系图谱</h3>
                             <Card className='container' style={{ height: "95%", overflow: 'hidden' }}></Card>
                         </div>
-                        <div style={{ width: "45%", height: "100%" }}>
-                            <h3>| 关系列表</h3>
+                        <div style={{ width: "46%", height: "100%" }}>
+                            <h3 style={{ fontSize: "19px" }}>| 关系列表</h3>
                             <Card style={{ height: "95%", overflow: 'hidden' }}>
                                 <Table
                                     columns={columns}
@@ -808,7 +808,7 @@ export default class ShortestPath extends Component {
                                     bordered
                                     title={() => '关系列表'}
                                     pagination={{
-                                        pageSize: 7
+                                        pageSize: 6
                                     }}
                                 />
                             </Card>

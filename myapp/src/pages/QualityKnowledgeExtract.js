@@ -657,7 +657,7 @@ export default class QualityKnowledgeExtract extends Component {
                 <div style={{ display: 'flex', justifyContent: 'space-between', width: "100%", height: "50%" }}>
                     <div style={{ width: '32%' }}>
                         <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
-                            <h3 style={{ margin: 0, marginLeft: 10 }}>| 输入 </h3>
+                            <h3 style={{ margin: 0, marginLeft: 10, fontSize: "20px" }}>| 输入 </h3>
                             <Button type="primary" style={{ marginLeft: '20%' }}>分析</Button>
                             <Button type="primary" style={{ marginLeft: 20 }}>提交</Button>
                         </div>
@@ -666,11 +666,11 @@ export default class QualityKnowledgeExtract extends Component {
 
                     <div style={{ width: '32%' }}>
 
-                        <h3 style={{ margin: 0, marginLeft: 10, marginBottom: 6 }}>| 实体识别 </h3>
+                        <h3 style={{ margin: 0, marginLeft: 10, marginBottom: 6, fontSize: "20px" }}>| 实体识别 </h3>
                         <TextArea style={{ height: "80%", marginTop: 10 }} />
                     </div>
                     <div style={{ width: '32%' }}>
-                        <h3 style={{ margin: 0, marginLeft: 10, marginBottom: 6 }}>| 关系识别 </h3>
+                        <h3 style={{ margin: 0, marginLeft: 10, marginBottom: 6, fontSize: "20px" }}>| 关系识别 </h3>
                         <TextArea style={{ height: "80%", marginTop: 10 }} />
                     </div>
                 </div>
@@ -678,8 +678,8 @@ export default class QualityKnowledgeExtract extends Component {
                 <div style={{ display: 'flex', justifyContent: 'space-between', width: "100%", height: "50%" }}>
                     <div style={{ width: '49%' }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <h3 style={{ margin: 0, marginLeft: 10 }}>| 语义依存句法分析 </h3>
-                            <Button type="primary" style={{ marginLeft: '45%' }}>分析</Button>
+                            <h3 style={{ margin: 0, marginLeft: 10, fontSize: "20px" }}>| 语义依存句法分析 </h3>
+                            <Button type="primary" style={{ marginLeft: '40%' }}>分析</Button>
                         </div>
                         <Card style={{ height: "93%", marginTop: 10, overflow: 'auto' }} >
                             <img src={require('./img/依存语法分析.png')}></img>
@@ -688,8 +688,8 @@ export default class QualityKnowledgeExtract extends Component {
 
                     <div style={{ width: '49%' }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <h3 style={{ margin: 0, marginLeft: 10 }}>| 知识图谱三元组 </h3>
-                            <Button type="primary" style={{ marginLeft: '50%' }} onClick={this.GenerateGraph}>生成</Button>
+                            <h3 style={{ margin: 0, marginLeft: 10, fontSize: "20px" }}>| 知识图谱三元组 </h3>
+                            <Button type="primary" style={{ marginLeft: '45%' }} onClick={this.GenerateGraph}>生成</Button>
                         </div>
                         <Card style={{ height: "93%", marginTop: 10, overflow: 'hidden' }} className='container' />
                     </div>

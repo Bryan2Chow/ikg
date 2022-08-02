@@ -736,7 +736,7 @@ export default class RelationQuery extends Component {
         if (this.props.CheckInfor.Relation === true) {
             return (
                 <div style={{ height: "100%" }}>
-                    <h3 style={{ marginTop: 20 }}>| 实体信息</h3>
+                    <h3 style={{ marginTop: 20, fontSize: "19px" }}>| 实体信息</h3>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                         <Input placeholder='输入头实体' style={{ width: "20%" }} onChange={this.HeadEntity} />
                         <Select
@@ -755,8 +755,8 @@ export default class RelationQuery extends Component {
                         <Button type='primary' onClick={this.SearchBasedRelation}>开始查询</Button>
                     </div>
 
-                    <h3 style={{ marginTop: 20 }}>| 关系图谱</h3>
-                    <Card className='container' style={{ height: "78%", overflow: 'hidden' }}>
+                    <h3 style={{ marginTop: 20, fontSize: "19px" }}>| 关系图谱</h3>
+                    <Card className='container' style={{ height: "76.5%", overflow: 'hidden' }}>
                         {/* {this.state.Fact.Tail} */}
                     </Card>
                 </div>

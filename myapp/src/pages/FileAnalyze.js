@@ -20,7 +20,7 @@ export default class FileAnalyze extends Component {
             <div style={{ margin: 'auto', height: '100%', display: 'flex', justifyContent: "space-around" }}>
                 <div style={{ width: "49%", height: '100%' }}>
                     <div style={{ height: "13%" }}>
-                        <Input type='file' style={{ width: '19%', marginRight: 30, border: 'none', bcgcol: "#fff" }} onChange={this.addUrl} />
+                        <Input type='file' style={{ width: '22%', marginRight: 30, border: 'none', bcgcol: "#fff", fontSize: "17px" }} onChange={this.addUrl} />
                         <Button style={{ marginRight: 30 }}>表格检测</Button>
                         <Button >表格信息识别</Button>
                         <h2 style={{ marginTop: 20 }}>| 文档预览</h2>
@@ -31,7 +31,7 @@ export default class FileAnalyze extends Component {
                 </div>
                 <div style={{ width: "49%", height: '100%' }}>
                     <div style={{ height: "61%" }}>
-                        <h3 style={{ marginLeft: 20 }}>| 表格检测</h3>
+                        <h2 style={{ marginLeft: 20 }}>| 表格检测</h2>
                         <Card style={{ height: "100%", overflow: "scroll", textAlign: 'center' }}>
                             <img style={{ width: '85%', }} src={require("./img/FinishDetectived.png")}></img>
                         </Card>
@@ -39,13 +39,14 @@ export default class FileAnalyze extends Component {
                     <br />
                     <br />
                     <div style={{ height: "25%" }}>
-                        <h3 style={{ marginLeft: 20 }}>| 表格信息识别</h3>
+                        <h2 style={{ marginLeft: 20 }}>| 表格信息识别</h2>
                         <TextArea style={{ height: "100%" }}></TextArea>
 
                     </div>
                     <br />
-                    <Button type="primary" style={{ marginTop: 19 }}>下载文件</Button>&nbsp;&nbsp;
-                    <span>支持CSV、TXT、JSON等格式</span>
+
+                    <Button type="primary" style={{ marginTop: "25px" }}>下载文件</Button>&nbsp;&nbsp;
+                    <span style={{ color: "#666" }}>支持CSV、TXT、JSON等格式</span>
                 </div>
             </div>
         )

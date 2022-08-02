@@ -24,9 +24,9 @@ export default class NavBar extends Component {
                     <div>
                         <span className="iconfont" style={{ color: 'white', float: 'left ' }}>&#xe997;</span>
                         <h1 style={{ color: 'white', float: 'left', fontSize: "25px" }}>薄壁壳体加工质量知识图谱管理与应用原型系统</h1>
-                        <div style={{ float: 'right', color: 'white' }}>
+                        <div style={{ float: 'right', color: 'white', fontSize: "18px" }}>
                             <Avatar size='large' icon={<UserOutlined />} />&nbsp;&nbsp;
-                            <Space>
+                            <Space style={{ fontSize: '18px' }}>
                                 dhu-KGadmin
                             </Space>
                             <CaretDownOutlined />&nbsp;&nbsp;

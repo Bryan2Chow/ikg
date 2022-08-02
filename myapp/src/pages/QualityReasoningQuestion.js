@@ -673,7 +673,7 @@ export default class QualityReasoningQuestion extends Component {
         return (
             <div className='ReasoningQuestion' style={{ height: "100%" }}>
                 <div className='QuestionDescription' style={{ height: "12%" }}>
-                    <h3>| 问题描述</h3>
+                    <h3 style={{ fontSize: "19px" }}>| 问题描述</h3>
                     <div className="SubQuestionDescription"  >
                         <Search
                             placeholder='请输入问题描述...'
@@ -681,18 +681,17 @@ export default class QualityReasoningQuestion extends Component {
                             allowClear
                             onSearch={this.StartSearch}
                         />
-                        <br />
-                        <br />
-                        <span >热门问题：
+
+                        <span style={{ fontSize: "15px" }}>热门问题：
                             <a href="#">
                                 旋压机床加工薄壁件产生周向断裂的原因？薄壁壳体焊缝出现气孔的解决方案？
                             </a>
                         </span>
                     </div>
                 </div>
-                <br />
-                <div className='QuestionResult' style={{ height: "12%" }}>
-                    <h3 >| 问题结果</h3>
+
+                <div className='QuestionResult' style={{ height: "12%", marginTop: '21px' }}>
+                    <h3 style={{ fontSize: "19px" }}>| 问题结果</h3>
                     <div>
                         <TextArea defaultValue={'旋轮成型角过大，进给比过大，壁厚减薄率过大'} style={{ width: "63%", backgroundColor: "#F1F1F1" }} />
                         <Card style={{ width: "35%", backgroundColor: "#F1F1F1", display: 'flex', justifyContent: 'space-between', alignItems: 'center', }}>
@@ -704,13 +703,13 @@ export default class QualityReasoningQuestion extends Component {
                 <br />
                 <div className='RealtionShow' style={{ height: "76%" }}>
                     <div style={{ width: "63%", height: "100%" }}>
-                        <h3>| 关系图谱</h3>
-                        <Card className='container' style={{ height: "100%", height: "85%", overflow: 'hidden' }} ></Card>
+                        <h3 style={{ fontSize: "19px" }}>| 关系图谱</h3>
+                        <Card className='container' style={{ height: "100%", height: "88%", overflow: 'hidden' }} ></Card>
                     </div>
                     <div style={{ width: "35%", height: "100%" }}>
-                        <h3 >| 相关链接</h3>
+                        <h3 style={{ fontSize: "19px" }}>| 相关链接</h3>
                         <div style={{ height: '100%' }}>
-                            <ul style={{ listStyleType: 'none', padding: 0, height: "85%", display: 'flex', flexDirection: 'column', justifyContent: 'space-around' }}>
+                            <ul style={{ listStyleType: 'none', padding: 0, height: "89%", display: 'flex', flexDirection: 'column', justifyContent: 'space-around' }}>
                                 <li style={{}}>
                                     <DeploymentUnitOutlined />
                                     <a href="http://www.cmiw.cn/" target={'_blank'} rel="noreferrer" style={{ color: 'black' }}>数控机床X轴镉一段时间就跑尺寸, 求助-数控技术-机械社区</a>

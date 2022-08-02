@@ -719,7 +719,7 @@ export default class MultiSetp extends Component {
         if (this.props.CheckInfor.Multi === true) {
             return (
                 <div style={{ height: "100%" }}>
-                    <h3 style={{ marginTop: 20 }}>| 追溯信息</h3>
+                    <h3 style={{ marginTop: 20, fontSize: "19px" }}>| 追溯信息</h3>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                         <Input placeholder='请输入查询节点名称' style={{ width: "20%" }} onChange={this.SelectedEntity} />
                         <Select
@@ -738,8 +738,8 @@ export default class MultiSetp extends Component {
                         <Button type='primary' onClick={this.QueryBasedMultistep} >开始查询</Button>
                     </div>
 
-                    <h3 style={{ marginTop: 20 }}>| 图追溯信息路径关系图谱</h3>
-                    <Card className='container' style={{ height: "78%", overflow: 'hidden' }}></Card>
+                    <h3 style={{ marginTop: 20, fontSize: "19px" }}>| 图追溯信息路径关系图谱</h3>
+                    <Card className='container' style={{ height: "76.5%", overflow: 'hidden' }}></Card>
                 </div>
             )
         } else {

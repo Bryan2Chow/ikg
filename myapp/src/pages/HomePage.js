@@ -9,7 +9,8 @@ const contentStyle = {
     // lineHeight: '200px',
     textAlign: 'center',
     background: 'rgb(242,242,242)',
-    margin: '150px auto 0'
+    margin: '150px auto 0',
+    fontSize: "18px"
 
 
 
@@ -41,7 +42,7 @@ export default class HomePage extends Component {
                     margin: 'auto'
                 }}>
                     <h2 >欢迎访问薄壁壳体加工质量知识图谱管理与应用原型系统！</h2>
-                    <h3>本平台基于Neo4j进行图数据库的存储，通过python的Flask进行后端请求处理，
+                    <h3 style={{ fontSize: "18px" }}>本平台基于Neo4j进行图数据库的存储，通过python的Flask进行后端请求处理，
                         使用bootstrap和ant design结合react框架进行前端展示。目前完成功能有基于Neo4图数据库的数据查询，
                         并将查询到的动态数据即时返回到前端页面进行结构化的展示。通过Echarts进行图数据库中图结构形式的查询结果展示，
                         使得查询结果更加直观一目了然。</h3>
@@ -79,19 +80,19 @@ export default class HomePage extends Component {
 
                 <div style={{ textAlign: 'center', height: "10%", marginTop: 38, display: "flex", justifyContent: 'space-around', alignItems: 'center', marginBottom: 40 }}>
                     <div style={{ padding: 10, backgroundColor: "rgb(242,242,242)" }}>
-                        <h3 style={{ color: 'black' }}>实体数量： {this.state.EntityNumbers}</h3>
+                        <h3 style={{ color: 'black', fontSize: "18px" }}>实体数量： {this.state.EntityNumbers}</h3>
                     </div>
                     <div style={{ padding: 10, backgroundColor: "rgb(242,242,242)" }}>
-                        <h3 style={{ color: 'black' }}>关系数量： {this.state.RealtionNumbers}</h3>
+                        <h3 style={{ color: 'black', fontSize: "18px" }}>关系数量： {this.state.RealtionNumbers}</h3>
                     </div>
                     <div style={{ padding: 10, backgroundColor: "rgb(242,242,242)" }}>
-                        <h3 style={{ color: 'black' }}>三元组的数量： {510352}</h3>
+                        <h3 style={{ color: 'black', fontSize: "18px" }}>三元组的数量： {510352}</h3>
                     </div>
                 </div>
 
                 <footer style={{ height: "20%", textAlign: 'center', overflow: 'hidden' }} >
                     <hr style={{}} />
-                    <div style={{ textAlign: "center", position: "relative" }}><b style={{ fontSize: "12px" }}>Powered by 薄壁壳体加工质量知识图谱管理与应用原型系统 | Copyright © 2020-2022 Institute of Intelligent Manufacturing@ Donghua University All Rights Reserved</b></div>
+                    <div style={{ textAlign: "center", position: "relative" }}><span style={{ fontSize: "12px", color: "#666" }}>Powered by 薄壁壳体加工质量知识图谱管理与应用原型系统 | Copyright © 2020-2022 Institute of Intelligent Manufacturing@ Donghua University All Rights Reserved</span></div>
                 </footer>
 
             </div >

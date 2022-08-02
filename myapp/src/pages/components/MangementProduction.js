@@ -13,7 +13,7 @@ class MangementProduction extends Component {
       <div style={{ height: "100%", textAlign: 'center', width: "100%" }}>
         <br />
         <br />
-        <Row style={{ fontSize: "20px", textAlign: "center", height: "100%", marginTop: "120px" }}>
+        <Row style={{ fontSize: "23px", textAlign: "center", height: "100%", marginTop: "120px" }}>
           <Col
             xs={{
               span: 5,

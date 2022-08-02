@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Button, Input, Space, Radio, Pagination, Card, Modal, Form } from 'antd';
 import { CopyOutlined, DeleteOutlined, FileOutlined, DownloadOutlined, DiffOutlined } from '@ant-design/icons';
 import FileList from './components/FileList';
+import './style/FileOrgnize.css'
 
 const { Search, TextArea } = Input;
 const layout = {
@@ -101,9 +102,9 @@ export default class FileOrgnize extends Component {
                     </Radio.Group>
                     <Space style={{ verticalAlign: 'middle' }}>
                         <Search
-                            placeholder="input search text"
+                            placeholder="输入搜素内容"
                             allowClear
-                            enterButton="Search"
+                            enterButton="搜索"
                             // size="large"
                             width="200px"
                             onSearch={this.SearchFile}
@@ -111,7 +112,7 @@ export default class FileOrgnize extends Component {
                     </Space>
                 </div>
                 <div style={{ height: '12% ' }}>
-                    <Button style={{ marginRight: 40 }} onClick={this.addFile}><DiffOutlined />添加</Button>
+                    <Button style={{ marginRight: 35 }} onClick={this.addFile}><DiffOutlined />添加</Button>
                     {/*点击添加按钮进行文件的添加 */}
                     <Modal title="添加文件" visible={this.state.isModalVisbale} onOk={this.handleOk} onCancel={this.handleCancel}>
                         <Form {...layout} name="basicForm" >
@@ -162,11 +163,11 @@ export default class FileOrgnize extends Component {
                         </Form>
 
                     </Modal>
-                    <Button style={{ marginRight: 40 }}><DownloadOutlined />下载</Button>
-                    <Button style={{ marginRight: 40 }}><FileOutlined />重命名</Button>
-                    <Button style={{ marginRight: 40 }}><DeleteOutlined />删除</Button>
-                    <Button style={{ marginRight: 40 }}><CopyOutlined />复制外链</Button>
-                    <Radio.Group defaultValue="默认排序" style={{ float: 'right' }} >
+                    <Button style={{ marginRight: 35 }}><DownloadOutlined />下载</Button>
+                    <Button style={{ marginRight: 35 }}><FileOutlined />重命名</Button>
+                    <Button style={{ marginRight: 35 }}><DeleteOutlined />删除</Button>
+                    <Button style={{ marginRight: 35 }}><CopyOutlined />复制外链</Button>
+                    <Radio.Group defaultValue="35排序" style={{ float: 'right' }} >
                         <Radio.Button value="默认排序" >默认排序</Radio.Button>
                         <Radio.Button value="按时间排序" >按时间排序</Radio.Button>
                     </Radio.Group>

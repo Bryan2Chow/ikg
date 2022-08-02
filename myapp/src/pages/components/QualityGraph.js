@@ -5113,7 +5113,7 @@ class QualityGraph extends Component {
     render() {
         return (
             <div style={{ width: "100%", height: '100%' }}>
-                <h3>| 薄壁壳体加工质量知识图谱概览</h3>
+                <h2>| 薄壁壳体加工质量知识图谱概览</h2>
 
                 <div style={{ width: "100%", height: '100%', overflow: 'hidden' }}>
 
@@ -5122,7 +5122,7 @@ class QualityGraph extends Component {
                     <Search style={{ width: "100%" }} enterButton="查询" placeholder='MATCH(n) RETURN n LIMIT 100' onSearch={this.addGraph} />
                     <br />
                     <br />
-                    <Card className="container" style={{ position: "relative", height: "87%", width: "100%", overflow: 'hidden' }}>
+                    <Card className="container" style={{ position: "relative", height: "86%", width: "100%", overflow: 'hidden' }}>
 
                     </Card>
 
