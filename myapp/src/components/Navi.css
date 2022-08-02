@@ -34,6 +34,7 @@
 
 .list-group-item {
     color: white;
+    font-size: 17px;
 }
 
 .ant-carousel .slick-dots li button {

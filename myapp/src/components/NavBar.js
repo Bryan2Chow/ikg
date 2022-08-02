@@ -23,7 +23,7 @@ export default class NavBar extends Component {
                 <Header className="header" >
                     <div>
                         <span className="iconfont" style={{ color: 'white', float: 'left ' }}>&#xe997;</span>
-                        <h1 style={{ color: 'white', float: 'left ' }}>薄壁壳体加工质量知识图谱管理与应用原型系统</h1>
+                        <h1 style={{ color: 'white', float: 'left', fontSize: "25px" }}>薄壁壳体加工质量知识图谱管理与应用原型系统</h1>
                         <div style={{ float: 'right', color: 'white' }}>
                             <Avatar size='large' icon={<UserOutlined />} />&nbsp;&nbsp;
                             <Space>
@@ -35,19 +35,20 @@ export default class NavBar extends Component {
                     </div>
                 </Header>
                 <Layout style={{}}>
-                    <Sider width={220} style={{}} className="site-layout-background">
+                    <Sider width={235} style={{}} className="site-layout-background">
                         <Menu
                             theme="dark"
                             mode="inline"
                             defaultSelectedKeys={['/HomePage']}
                             color="rgb(56,135,205)"
 
+
                             items={
                                 [
                                     {
                                         key: '/HomePage',
                                         icon: <HomeOutlined />,
-                                        label: <Link className="list-group-item" to="/HomePage">系统首页</Link>,
+                                        label: <Link className="list-group-item" to="/HomePage" >系统首页</Link>,
                                     },
                                     {
                                         key: '/FileOrgnize',

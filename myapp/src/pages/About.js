@@ -6,7 +6,7 @@ export default class About extends Component {
     render() {
         return (
             <div className="About" >
-                <h2>关于我们</h2>
+                <h2 style={{}}>关于我们</h2>
                 <h3>|  团队介绍</h3>
                 <Card className="ContentShow">
                     <h2 >东华大学机械工程学院智能制造研究所</h2>
