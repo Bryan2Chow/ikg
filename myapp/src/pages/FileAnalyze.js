@@ -33,7 +33,7 @@ export default class FileAnalyze extends Component {
                     <div style={{ height: "61%" }}>
                         <h2 style={{ marginLeft: 20 }}>| 表格检测</h2>
                         <Card style={{ height: "100%", overflow: "scroll", textAlign: 'center' }}>
-                            <img style={{ width: '85%', }} src={require("./img/FinishDetectived.png")}></img>
+                            <img style={{ width: '85%', }} src={require("./img/deteced123.jpg")}></img>
                         </Card>
                     </div>
                     <br />

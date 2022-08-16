@@ -13,6 +13,11 @@ export default class MultiSetp extends Component {
         SelectedRelation: 1,
         data: {
             nodes: [
+                { "id": "旋压工作角大", "label": '旋压工作角大', "name": '旋压工作角大', "group": 1 },
+                { "id": "旋轮跳动大", "label": '旋轮跳动大', "name": '旋轮跳动大', "group": 1 },
+                { "id": "芯模跳动大", "label": '芯模跳动大', "name": '芯模跳动大', "group": 1 },
+                { "id": "旋轮下压量大", "label": '旋轮下压量大', "name": '旋轮下压量大', "group": 1 },
+
                 { "id": "工件", "label": '工件', "name": '工件', "group": 1 },
                 { "id": "航天薄壁件", "label": '航天薄壁件', "name": '航天薄壁件', "group": 2 },
                 { "id": "主结构框架", "label": '主结构框架', "name": '主结构框架', "group": 2 },
@@ -94,6 +99,32 @@ export default class MultiSetp extends Component {
 
             ],
             links: [
+                {
+                    "id": nanoid(),
+                    "label": 'cause',
+                    "source": '鳞状剥离',
+                    "target": '旋压工作角大'
+                },
+                {
+                    "id": nanoid(),
+                    "label": 'cause',
+                    "source": '波纹状剥离',
+                    "target": '旋轮跳动大'
+                },
+                {
+                    "id": nanoid(),
+                    "label": 'cause',
+                    "source": '局部变形',
+                    "target": '芯模跳动大'
+                },
+                {
+                    "id": nanoid(),
+                    "label": 'cause',
+                    "source": '旋轮压缩',
+                    "target": '旋轮下压量大'
+                },
+
+
                 {
                     "id": nanoid(),
                     "label": 'has',

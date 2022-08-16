@@ -10,7 +10,7 @@ const ConstructGraph = (data) => {
         .force("link", d3.forceLink(links).id(d => {
             return d.id
         }
-        ).distance(250))
+        ).distance(200))
         // 设置节点的碰撞半径，就是两个节点的中心距离
         .force("collide", d3.forceCollide().radius(() => 50))
         // 将所有的节点都推向图表的中心（给定的一个点），默认坐标是[0,0]，施加力时，所有节点的相对位置保持不变

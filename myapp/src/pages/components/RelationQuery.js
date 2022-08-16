@@ -92,7 +92,6 @@ export default class RelationQuery extends Component {
                 { "id": "旋转状皱折", "label": '旋转状皱折', "name": '旋转状皱折', "group": 2 },
                 { "id": "壁部皱折", "label": '壁部皱折', "name": '壁部皱折', "group": 5 },
                 { "id": "端部皱折", "label": '端部皱折', "name": '端部皱折', "group": 5 },
-                { "id": "内部龟裂", "label": '内部龟裂', "name": '内部龟裂', "group": 5 },
                 { "id": "首次进给比比例过大", "label": '首次进给比比例过大', "name": '首次进给比比例过大', "group": 2 },
                 { "id": "调小首次加工进给比", "label": '调小首次加工进给比', "name": '调小首次加工进给比', "group": 2 },
                 { "id": "轴向破裂", "label": '轴向破裂', "name": '轴向破裂', "group": 3 },

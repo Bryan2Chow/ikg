@@ -684,7 +684,7 @@ export default class QualityReasoningQuestion extends Component {
 
                         <span style={{ fontSize: "15px" }}>热门问题：
                             <a href="#">
-                                旋压机床加工薄壁件产生周向断裂的原因？薄壁壳体焊缝出现气孔的解决方案？
+                                旋压机床加工薄壁件产生周向破裂的原因？薄壁壳体焊缝出现气孔的解决方案？
                             </a>
                         </span>
                     </div>
@@ -712,32 +712,27 @@ export default class QualityReasoningQuestion extends Component {
                             <ul style={{ listStyleType: 'none', padding: 0, height: "89%", display: 'flex', flexDirection: 'column', justifyContent: 'space-around' }}>
                                 <li style={{}}>
                                     <DeploymentUnitOutlined />
-                                    <a href="http://www.cmiw.cn/" target={'_blank'} rel="noreferrer" style={{ color: 'black' }}>数控机床X轴镉一段时间就跑尺寸, 求助-数控技术-机械社区</a>
+                                    <a href="http://www.cmiw.cn/" target={'_blank'} rel="noreferrer" style={{ color: 'black', fontSize: "15px" }}>火箭发动机壳体开裂原因_材料与测试网</a>
                                     <hr />
                                 </li>
 
                                 <li>
                                     <DeploymentUnitOutlined />
-                                    <a href="http://www.chinawenben.com/" target={'_blank'} rel="noreferrer" style={{ color: 'black' }}>数控机床X轴尺寸忽大忽小怎么办-中华文本库</a>
+                                    <a href="http://www.chinawenben.com/" target={'_blank'} rel="noreferrer" style={{ color: 'black', fontSize: "15px" }}>某型复合增程弹发动机壳体裂纹产生原因及对策_兵器装备工程学报</a>
                                     <hr /></li>
 
                                 <li><DeploymentUnitOutlined />
-                                    <a href="https://wenku.baidu.com/" target={'_blank'} rel="noreferrer" style={{ color: 'black' }}>cnc机床间隙调整方法-百度文库</a>
+                                    <a href="https://wenku.baidu.com/" target={'_blank'} rel="noreferrer" style={{ color: 'black', fontSize: "15px" }}>铸铝壳体断裂故障的原因及修复方案的研究_百度文库</a>
                                     <hr /></li>
 
                                 <li><DeploymentUnitOutlined />
-                                    <a href="http://www.cmiw.cn/" target={'_blank'} rel="noreferrer" style={{ color: 'black' }}>各位大佬沈阳机床的数控车床每次开关机之后, x轴显示向下</a>
+                                    <a href="http://www.cmiw.cn/" target={'_blank'} rel="noreferrer" style={{ color: 'black', fontSize: "15px" }}>50SiMnVB壳体断裂原因分析_百度学术</a>
                                     <hr /></li>
 
                                 <li><DeploymentUnitOutlined />
-                                    <a href="http://www.cmiw.cn/" target={'_blank'} rel="noreferrer" style={{ color: 'black' }}>普通高速精密加工车床的表面粗糙度达不到要求。是什么原因？</a>
+                                    <a href="http://www.cmiw.cn/" target={'_blank'} rel="noreferrer" style={{ color: 'black', fontSize: "15px" }}>薄壁件精密旋压成形方法及缺陷控制研究_中国知网</a>
                                     <hr /></li>
-                                <li><DeploymentUnitOutlined />
-                                    <a href="http://www.cmiw.cn/" target={'_blank'} rel="noreferrer" style={{ color: 'black' }}>cnc金属加工和钻孔时阻力过大是什么原因?不打孔的原因是什么？</a>
-                                    <hr /></li>
-                                <li><DeploymentUnitOutlined />
-                                    <a href="http://www.cmiw.cn/" target={'_blank'} rel="noreferrer" style={{ color: 'black' }}>车刀不断崩刃，如何解决？</a>
-                                    <hr /></li>
+
                             </ul>
                         </div>
                     </div>

@@ -25,10 +25,10 @@ class MangementProduction extends Component {
             }}
 
           >
-            <Image preview={false} src={require("../img/PDM.png")} alt="哈哈哈哈" />
+            <Image preview={false} src={require("../img/PDM.jpg")} alt="哈哈哈哈" />
             <br />
             <br />
-            <a href="http://127.0.0.1:8080/149Platform/pdm/login.html" className="FakeBtn">PDM</a>
+            <a href="http://127.0.0.1:8080/149Platform/pdm/login.html" className="FakeBtn">PDM系统</a>
           </Col>
           <Col
             xs={{

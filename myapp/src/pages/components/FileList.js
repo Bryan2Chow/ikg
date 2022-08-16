@@ -36,28 +36,28 @@ export default class FileList extends Component {
                     }
                 </Checkbox.Group> */}
                 <Checkbox.Group style={{ textAlign: 'center', width: '100%', display: 'flex', justifyContent: 'space-around' }} onChange={this.CheckChange}>
-                    <div>
+                    {/* <div>
                         < Checkbox>
                             <Image style={{ height: "400px", paddingTop: "35px", paddingBottom: "35px" }} src={require('../img/产品质量调查单_00.jpg')}></Image>
                         </Checkbox>
                         <h2>{'产品质量调查单'}</h2>
-                    </div>
+                    </div> */}
                     <div>
-                        < Checkbox >
-                            <Image style={{ height: "400px", paddingTop: "35px", paddingBottom: "35px" }} src={require('../img/电子束焊接过程质量控制措施 1_00.jpg')}></Image>
-                        </Checkbox>
+
+                        <Image style={{ height: "440px", paddingTop: "35px", paddingBottom: "35px" }} src={require('../img/电子束焊接过程质量控制措施 1_00.jpg')}></Image>
+
                         <h2>{'电子束焊接过程质量控制措施'}</h2>
                     </div>
                     <div>
-                        < Checkbox >
-                            <Image style={{ height: "400px", paddingTop: "35px", paddingBottom: "35px" }} src={require('../img/焊接件缺陷检验1_00.jpg')}></Image>
-                        </Checkbox>
+
+                        <Image style={{ height: "440px", paddingTop: "35px", paddingBottom: "35px" }} src={require('../img/焊接件缺陷检验1_00.jpg')}></Image>
+
                         <h2>{'焊接件缺陷检验'}</h2>
                     </div>
                     <div>
-                        < Checkbox >
-                            <Image style={{ height: "400px", paddingTop: "35px", paddingBottom: "35px" }} src={require('../img/加工过程质量控制措施_00.jpg')}></Image>
-                        </Checkbox>
+
+                        <Image style={{ height: "440px", paddingTop: "35px", paddingBottom: "35px" }} src={require('../img/加工过程质量控制措施_00.jpg')}></Image>
+
                         <h2>{'加工过程质量控制措施'}</h2>
                     </div>
                 </Checkbox.Group>
